@@ -1,12 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    #menu {
+        display: flex;
+        width: 600px;
+        margin: 50px auto;
+        padding: 0px;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .buttons {
+        font-size: 50px;
+        font-weight: 600;
+        border-radius: 10px;
+        padding: 10px;
+        background-color: rgb(255, 255, 80);
+    }
+
+    .buttons:hover {
+        background-color: rgb(183, 255, 76);
+    }
+
+    .result{
+        background-color: rgb(110, 214, 255);
+        margin: 10px;
+        padding: 10px;
+        text-align: center;
+        font-family: sans-serif;
+    }
+</style>
+
 <body>
-    
+    <div id="menu">
+        <button class="buttons" id="button1">Rock</button>
+        <button class="buttons" id="button2">Paper</button>
+        <button class="buttons" id="button3">Scissor</button>
+    </div>
+    <div class="result"><h1>Click any as your choice:</h1></div>
 </body>
-<script src="script.js"></script>
+<script src="script.js"> </script>
+
 </html>
