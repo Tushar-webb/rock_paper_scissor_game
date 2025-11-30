@@ -18,6 +18,9 @@
         padding: 0px;
         justify-content: center;
         gap: 10px;
+        flex-wrap: wrap;
+        max-width: 90%;
+
     }
 
     .buttons {
@@ -26,19 +29,28 @@
         border-radius: 10px;
         padding: 10px;
         background-color: rgb(255, 255, 80);
+        flex: 1 1 150px;
     }
 
     .buttons:hover {
         background-color: rgb(183, 255, 76);
     }
 
-    .result{
+    .result {
         background-color: rgb(110, 214, 255);
         margin: 10px;
         padding: 10px;
         text-align: center;
         font-family: sans-serif;
     }
+
+    @media (max-width: 600px) {
+    .buttons {
+        font-size: 30px;
+        padding: 10px;
+    }
+}
+
 </style>
 
 <body>
@@ -47,7 +59,9 @@
         <button class="buttons" id="button2">Paper</button>
         <button class="buttons" id="button3">Scissor</button>
     </div>
-    <div class="result"><h1>Click any as your choice:</h1></div>
+    <div class="result">
+        <h1>Click any as your choice:</h1>
+    </div>
 </body>
 <script src="script.js"> </script>
 
